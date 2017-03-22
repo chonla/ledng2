@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+.container {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#ghost{
+    display: inline-block;
+    height: 0;
+    position: absolute;
+}
+
+.tickerContainer{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+
+}
+.myStyles{
+    background: #000;   
+    color: #ffff00;
+    border: 1px solid #ddd;
+}
+
+.editor {
+    justify-content: center;
+}
+
+.editor input[type="text"] {
+    font-size: 32pt;
+}
+
+.editor button {
+    font-size: 32pt;
+}
