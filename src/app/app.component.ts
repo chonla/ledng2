@@ -6,7 +6,7 @@ import { TickerDirective } from './textticker.directive';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title: string = "ng2!!";
+  title: string = "";
   private editMode: boolean = false;
   @ViewChild(TickerDirective) vc: TickerDirective;
   @ViewChild('input') inp;

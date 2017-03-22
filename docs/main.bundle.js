@@ -219,7 +219,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = "ng2!!";
+        this.title = "";
         this.editMode = false;
         this.editMode = true;
     }
@@ -330,7 +330,7 @@ var environment = {
 /***/ 437:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"tickerContainer myStyles container\" *ngIf=\"!editMode\" (window:keydown)=\"handleKeyDown($event)\">\n  <div ticker [trigger]=\"'auto'\" [text]=\"title\" [speed]=\"20\" [padding-right]=\"40\" [size]=\"600\"></div>\n</div>\n\n<div *ngIf=\"editMode\" class=\"editor container\">\n  <input type=\"text\" [(ngModel)]=\"title\" (window:keydown)=\"handleKeyDown($event)\"><button (click)=\"startScrolling()\">Scroll</button>\n</div>\n\n<div id=\"ghost\"></div>"
+module.exports = "<div class=\"tickerContainer myStyles container\" *ngIf=\"!editMode\" (window:keydown)=\"handleKeyDown($event)\">\n  <div ticker [trigger]=\"'auto'\" [text]=\"title\" [speed]=\"20\" [padding-right]=\"40\" [size]=\"600\"></div>\n</div>\n\n<div *ngIf=\"editMode\" class=\"editor container\">\n  <input type=\"text\" placeholder=\"Input your text\" [(ngModel)]=\"title\" (window:keydown)=\"handleKeyDown($event)\"><button (click)=\"startScrolling()\">Scroll</button>\n</div>\n\n<div id=\"ghost\"></div>"
 
 /***/ }),
 

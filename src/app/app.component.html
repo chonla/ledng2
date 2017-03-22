@@ -3,7 +3,7 @@
 </div>
 
 <div *ngIf="editMode" class="editor container">
-  <input type="text" [(ngModel)]="title" (window:keydown)="handleKeyDown($event)"><button (click)="startScrolling()">Scroll</button>
+  <input type="text" placeholder="Input your text" [(ngModel)]="title" (window:keydown)="handleKeyDown($event)"><button (click)="startScrolling()">Scroll</button>
 </div>
 
 <div id="ghost"></div>
